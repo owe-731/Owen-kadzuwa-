@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect - Find Your Dream Job</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Career<span>Connect</span></a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#jobs">Browse Jobs</a></li>
+                    <li><a href="#companies">Companies</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="#" class="btn login-btn">Login</a>
+                    <a href="#" class="btn register-btn">Register</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your <span>Dream Job</span> Today</h1>
+                <p>Discover thousands of job offers and find the perfect match for your career</p>
+                <div class="search-box">
+                    <div class="search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Job title, keywords, or company">
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <button class="search-btn">Search Jobs</button>
+                </div>
+                <div class="popular-tags">
+                    <span>Popular Searches:</span>
+                    <a href="#">Developer</a>
+                    <a href="#">Designer</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Remote</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400" alt="Happy professionals" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <p class="section-subtitle">Find the job that fits your skills and interests</p>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Technology</h3>
+                    <p>1,200 Jobs</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-briefcase-medical"></i>
+                    <h3>Healthcare</h3>
+                    <p>850 Jobs</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Finance</h3>
+                    <p>1,050 Jobs</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>750 Jobs</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design</h3>
+                    <p>680 Jobs</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Food Service</h3>
+                    <p>920 Jobs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="featured-jobs" id="jobs">
+        <div class="container">
+            <h2 class="section-title">Featured Jobs</h2>
+            <p class="section-subtitle">Find your next career opportunity</p>
+            <div class="jobs-filter">
+                <button class="filter-btn active" data-filter="all">All Jobs</button>
+                <button class="filter-btn" data-filter="fulltime">Full Time</button>
+                <button class="filter-btn" data-filter="parttime">Part Time</button>
+                <button class="filter-btn" data-filter="remote">Remote</button>
+                <button class="filter-btn" data-filter="contract">Contract</button>
+            </div>
+            <div class="jobs-list" id="jobs-container">
+                <!-- Jobs will be loaded here via JavaScript -->
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn view-all-btn">View All Jobs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Companies Section -->
+    <section class="top-companies" id="companies">
+        <div class="container">
+            <h2 class="section-title">Top Companies Hiring</h2>
+            <p class="section-subtitle">Work with the best companies in the industry</p>
+            <div class="companies-slider">
+                <div class="company-card">
+                    <img src="https://via.placeholder.com/150x80" alt="Company Logo">
+                    <h3>TechVision</h3>
+                    <p>42 Open Positions</p>
+                    <a href="#" class="company-link">View Jobs</a>
+                </div>
+                <div class="company-card">
+                    <img src="https://via.placeholder.com/150x80" alt="Company Logo">
+                    <h3>Global Finance</h3>
+                    <p>28 Open Positions</p>
+                    <a href="#" class="company-link">View Jobs</a>
+                </div>
+                <div class="company-card">
+                    <img src="https://via.placeholder.com/150x80" alt="Company Logo">
+                    <h3>HealthPlus</h3>
+                    <p>35 Open Positions</p>
+                    <a href="#" class="company-link">View Jobs</a>
+                </div>
+                <div class="company-card">
+                    <img src="https://via.placeholder.com/150x80" alt="Company Logo">
+                    <h3>EduFuture</h3>
+                    <p>19 Open Positions</p>
+                    <a href="#" class="company-link">View Jobs</a>
+                </div>
+                <div class="company-card">
+                    <img src="https://via.placeholder.com/150x80" alt="Company Logo">
+                    <h3>DesignHub</h3>
+                    <p>15 Open Positions</p>
+                    <a href="#" class="company-link">View Jobs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get your dream job in 3 simple steps</p>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Create Your Profile</h3>
+                    <p>Register and build your professional profile to stand out to employers.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-search"></i>
+                    <h3>Search Jobs</h3>
+                    <p>Browse thousands of job listings and find the perfect match.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-paper-plane"></i>
+                    <h3>Apply Now</h3>
+                    <p>Submit your application with just one click and get hired faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <p class="section-subtitle">What our candidates say about us</p>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>CareerConnect helped me find my dream job in just two weeks! The platform is easy to use and the job matches were spot on.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/80x80" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>UX Designer at TechVision</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>As a recent graduate, I was struggling to find opportunities. CareerConnect connected me with amazing companies and I landed a great position.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/80x80" alt="Michael Chen">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Software Developer at InnovateSoft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to take the next step in your career?</h2>
+                <p>Join thousands of professionals who found their dream jobs through CareerConnect</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn cta-job-seeker">I'm Looking for a Job</a>
+                    <a href="#" class="btn cta-employer">I Want to Hire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CareerConnect</h3>
+                    <p>Connecting talent with opportunity. Our platform helps job seekers find their perfect career match and employers discover top talent.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>For Job Seekers</h3>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Create Profile</a></li>
+                        <li><a href="#">Job Alerts</a></li>
+                        <li><a href="#">Career Resources</a></li>
+                        <li><a href="#">Resume Builder</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Recruiting Solutions</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                        <li><a href="#">Employer Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Career Street, Job City, JC 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@careerconnect.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CareerConnect. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
